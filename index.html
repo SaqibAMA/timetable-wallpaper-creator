@@ -16,11 +16,18 @@
     <link rel="shortcut icon" href="timetable-icon.png" type="image/png" />
 
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/canvas2image.js" type="text/javascript"></script>
+    <script src="js/html2canvas.min.js" type="text/javascript"></script>
+
+
 </head>
 <body>
     
 
-    <section id="wallpaper">
+    <div id="wallpaper">
 
         <p class="day">Monday</p>
         <p class="course">OOP [11:00 - 1:00] [CS-1]</p>
@@ -28,7 +35,7 @@
         <p class="course">Calculus [11:00 - 1:00] [CS-1]</p>
         <p class="day">Tuesday</p>
 
-    </section>
+    </div>
 
     <section id="controls">
 
@@ -44,8 +51,46 @@
 
         <button class="ctrlButton" onclick="resetFields();">RESET</button>
 
+
+        <!-- <button id="saveImage" class="ctrlButton" onclick="resetFields();">SAVE IMAGE</button> -->
+
     </section>
 
+    <div id="img-out"></div>
+
+
+
+    <script type="text/javascript">
+    
+
+    /*
+        $('#saveImage').click(function(){
+
+            var elm = $('#wallpaper').get(0);
+            var len = $('#wallpaper').height();
+            var width = $('#wallpaper').width();
+
+            len = width = 500;
+
+            var type = "png";
+        
+            var fileName = "post";
+        
+            html2canvas(elm).then(function(canvas) {
+                var canvasWidth = canvas.width;
+                var canvasHeight = canvas.height;
+        
+                var img = Canvas2Image.convertToImage(canvas, canvasWidth, canvasHeight);
+        
+                Canvas2Image.saveAsImage(canvas, len, width, type, fileName);
+        
+            });
+    
+        });
+
+    */
+            
+        </script>
 
 </body>
 </html>
