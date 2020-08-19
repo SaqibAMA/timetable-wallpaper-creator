@@ -43,6 +43,8 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .ctrlButton {
