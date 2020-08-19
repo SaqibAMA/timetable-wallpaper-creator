@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #cecece;
+}
+
+#wallpaper {
+  height: 800px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #000;
+  text-align: center;
+  padding: 200px 0px 0px 0px;
+}
+
+#wallpaper .day {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+#wallpaper .course {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  padding: 1px 20px;
+}
+
+#controls {
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.ctrlButton {
+  background-color: yellow;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+  display: block;
+  -webkit-box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ctrlButton:focus {
+  outline: none;
+  background-color: #e6e600;
+}
+
+.ctrlButton:hover {
+  background-color: #e6e600;
+}
+
+#contentField {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+}
+/*# sourceMappingURL=index-css.css.map */
